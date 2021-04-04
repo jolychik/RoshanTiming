@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class RoshanTimer : Form
+    public partial class Clear : Form
     {
-        public RoshanTimer()
+        public Clear()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
 
         private void Calc_Click(object sender, EventArgs e)
         {
-
+           
 
             if (Minute.Text == "" || Second.Text == "")
             {
@@ -315,11 +315,13 @@ namespace WindowsFormsApp1
                 Clipboard.SetText(label5.Text);
                 label7.Visible = true;
                 panel2.Visible = true;
+                RClear.Visible = true;
             }
         }
 
         private void Minute_TextChanged(object sender, EventArgs e)
         {
+
             Minute.MaxLength = 3;
             Minute.TabIndex = 2;
             Minute.TabStop = true;
@@ -383,11 +385,13 @@ namespace WindowsFormsApp1
 
         private void Minute_Enter_1(object sender, EventArgs e)
         {
+
             label6.Visible = false;
         }
 
         private void Second_Enter(object sender, EventArgs e)
         {
+
             label6.Visible = false;
         }
 
@@ -438,6 +442,12 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
+        }
+
+        private void c_Click(object sender, EventArgs e)
+        {
             Minute.Text = "";
             Second.Text = "";
             panel1.Visible = false;
@@ -449,10 +459,6 @@ namespace WindowsFormsApp1
             label5.Visible = false;
             label7.Visible = false;
             Minute.Focus();
-            Minute.TabIndex = 0;
-            Second.TabIndex = 1;
-            Calc.TabIndex = 2;
-            Clear.TabIndex = 3;
         }
     }
 }

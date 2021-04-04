@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class RoshanTimer
+    partial class Clear
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Clear = new System.Windows.Forms.Button();
+            this.RClear = new System.Windows.Forms.Label();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.MI3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -222,7 +222,7 @@ namespace WindowsFormsApp1
             this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.menuStrip2.Location = new System.Drawing.Point(147, 0);
+            this.menuStrip2.Location = new System.Drawing.Point(146, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(110, 24);
             this.menuStrip2.TabIndex = 15;
@@ -251,6 +251,7 @@ namespace WindowsFormsApp1
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.RClear);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(394, 291);
@@ -259,21 +260,18 @@ namespace WindowsFormsApp1
             this.panel2.TabIndex = 19;
             this.panel2.Visible = false;
             // 
-            // Clear
+            // RClear
             // 
-            this.Clear.BackColor = System.Drawing.Color.LightGray;
-            this.Clear.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Clear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Clear.Location = new System.Drawing.Point(118, 363);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(180, 60);
-            this.Clear.TabIndex = 3;
-            this.Clear.Text = "Всё стереть";
-            this.Clear.UseVisualStyleBackColor = false;
-            this.Clear.Click += new System.EventHandler(this.button1_Click);
+            this.RClear.AutoSize = true;
+            this.RClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RClear.Location = new System.Drawing.Point(296, 9);
+            this.RClear.Name = "RClear";
+            this.RClear.Size = new System.Drawing.Size(50, 16);
+            this.RClear.TabIndex = 21;
+            this.RClear.Text = "Заново";
+            this.RClear.Visible = false;
+            this.RClear.Click += new System.EventHandler(this.c_Click);
             // 
             // menuStrip3
             // 
@@ -294,12 +292,11 @@ namespace WindowsFormsApp1
             this.MI3.Size = new System.Drawing.Size(97, 20);
             this.MI3.Text = "Тёмная тема";
             // 
-            // RoshanTimer
+            // Clear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 455);
-            this.Controls.Add(this.Clear);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
@@ -313,7 +310,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.menuStrip3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "RoshanTimer";
+            this.Name = "Clear";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoshanTiming v0.3 alpha";
             this.Load += new System.EventHandler(this.RoshanTimer_Load);
@@ -352,8 +349,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem MI3;
+        private System.Windows.Forms.Label RClear;
     }
 }

@@ -22,7 +22,6 @@ C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\bin\Release\netcoreapp3.1\win
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\bin\Release\netcoreapp3.1\win-x86\RoshanTiming.pdb
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\WindowsFormsApp1.AboutBox1.resources
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.Properties.Resources.resources
-C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\WindowsFormsApp1.RoshanTimer.resources
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.csproj.GenerateResource.cache
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.AssemblyInfoInputs.cache
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.AssemblyInfo.cs
@@ -30,3 +29,4 @@ C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.dll
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.pdb
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\RoshanTiming.genruntimeconfig.cache
+C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\win-x86\WindowsFormsApp1.Clear.resources
