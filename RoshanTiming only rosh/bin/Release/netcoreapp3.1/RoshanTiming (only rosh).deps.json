@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RoshanTiming (only rosh)/1.0.0": {
+        "runtime": {
+          "RoshanTiming (only rosh).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RoshanTiming (only rosh)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

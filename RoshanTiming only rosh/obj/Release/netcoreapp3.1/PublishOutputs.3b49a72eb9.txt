@@ -1,0 +1,5 @@
+C:\Users\kravt\Desktop\Новая папка\WindowsFormsApp1.exe
+C:\Users\kravt\Desktop\Новая папка\WindowsFormsApp1.dll
+C:\Users\kravt\Desktop\Новая папка\WindowsFormsApp1.deps.json
+C:\Users\kravt\Desktop\Новая папка\WindowsFormsApp1.runtimeconfig.json
+C:\Users\kravt\Desktop\Новая папка\WindowsFormsApp1.pdb
