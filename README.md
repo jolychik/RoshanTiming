@@ -1,2 +1,2 @@
 # RoshanTiming
-Старые версии - https://github.com/jolychik/Old-versions-Roshan-Timing
+Старые версии программы - https://github.com/jolychik/Old-versions-Roshan-Timing
