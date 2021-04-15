@@ -8,11 +8,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Clear : Form
+    public partial class RT : Form
     {
-        public Clear()
+        public RT()
         {
             InitializeComponent();
+            //Lminute.Text = Properties.Setting.Default.Язык;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -32,17 +33,22 @@ namespace WindowsFormsApp1
 
         private void Calc_Click(object sender, EventArgs e)
         {
-           
 
-            if (Minute.Text == "" || Second.Text == "")
+
+            if (Minute.Text == "")
             {
                 label6.Visible = true;
                 label6.ForeColor = Color.Red;
-                label6.Text = ("Вы что-то не ввели");
+                label6.Text = ("Вы не ввели минуту");
+
 
             }
             else
             {
+                if (Second.Text == "")
+                {
+                    Second.Text = "00";
+                }
                 int min = Convert.ToInt32(Minute.Text);
                 int sec = Convert.ToInt32(Second.Text);
                 int time1;
@@ -71,7 +77,9 @@ namespace WindowsFormsApp1
                 //label5.Visible = true;
                 //Copy.Visible = true;
 
-                if (Second.Text == "01")
+                if ((Second.Text == "01") || (Second.Text == "02") || (Second.Text == "03") || (Second.Text == "04") || (Second.Text == "05") || (Second.Text == "06") || (Second.Text == "07") || (Second.Text == "08") || (Second.Text == "09") ||
+                    (Second.Text == "1") || (Second.Text == "2") || (Second.Text == "3") || (Second.Text == "4") || (Second.Text == "5") || (Second.Text == "6") || (Second.Text == "7") || (Second.Text == "8") || (Second.Text == "9") ||
+                    (Second.Text == "0") || (Second.Text == "00"))
                 {
                     label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
 
@@ -83,240 +91,13 @@ namespace WindowsFormsApp1
 
                     label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
                 }
-                if (Second.Text == "02")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
 
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "03")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "04")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "05")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "06")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "07")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "08")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "09")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "1")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "2")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "3")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "4")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "5")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "6")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "7")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "8")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "9")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "0")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
-                if (Second.Text == "00")
-                {
-                    label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                    label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                    label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                    label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                    label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                }
                 label5.Visible = true;
                 Clipboard.SetText(label5.Text);
                 label7.Visible = true;
                 panel2.Visible = true;
                 RClear.Visible = true;
-            }
+            } 
         }
 
         private void Minute_TextChanged(object sender, EventArgs e)
@@ -359,7 +140,7 @@ namespace WindowsFormsApp1
 
         private void RoshanTimer_Load(object sender, EventArgs e)
         {
-
+           //this.Lminute.Text = Properties.Setting.Default.Язык;
         }
 
         private void Lsecond_Click(object sender, EventArgs e)
@@ -369,7 +150,6 @@ namespace WindowsFormsApp1
 
         //private void Back_Click(object sender, EventArgs e)
         //{
-        //
         //    this.Hide();
         //    RoshTime MainMenu = new RoshTime();
         //    MainMenu.Show();
@@ -379,9 +159,6 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
-
-
-
 
         private void Minute_Enter_1(object sender, EventArgs e)
         {
@@ -459,6 +236,12 @@ namespace WindowsFormsApp1
             label5.Visible = false;
             label7.Visible = false;
             Minute.Focus();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //Properties.Setting.Default.Язык = Lminute.Text;
+            //Properties.Setting.Default.Save();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Clear
+    partial class RT
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RT));
             this.Minute = new System.Windows.Forms.TextBox();
             this.Calc = new System.Windows.Forms.Button();
             this.Second = new System.Windows.Forms.TextBox();
@@ -48,13 +49,12 @@ namespace WindowsFormsApp1
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.RClear = new System.Windows.Forms.Label();
-            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
-            this.MI3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.menuStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Minute
@@ -265,7 +265,7 @@ namespace WindowsFormsApp1
             this.RClear.AutoSize = true;
             this.RClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RClear.Location = new System.Drawing.Point(296, 9);
+            this.RClear.Location = new System.Drawing.Point(306, 9);
             this.RClear.Name = "RClear";
             this.RClear.Size = new System.Drawing.Size(50, 16);
             this.RClear.TabIndex = 21;
@@ -273,30 +273,24 @@ namespace WindowsFormsApp1
             this.RClear.Visible = false;
             this.RClear.Click += new System.EventHandler(this.c_Click);
             // 
-            // menuStrip3
+            // pictureBox1
             // 
-            this.menuStrip3.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MI3});
-            this.menuStrip3.Location = new System.Drawing.Point(257, 0);
-            this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(105, 24);
-            this.menuStrip3.TabIndex = 20;
-            this.menuStrip3.Text = "Тёмная тема";
-            this.menuStrip3.Visible = false;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(757, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
-            // MI3
-            // 
-            this.MI3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MI3.Name = "MI3";
-            this.MI3.Size = new System.Drawing.Size(97, 20);
-            this.MI3.Text = "Тёмная тема";
-            // 
-            // Clear
+            // RT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 455);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
@@ -307,10 +301,12 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.Minute);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
-            this.Controls.Add(this.menuStrip3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Clear";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(809, 494);
+            this.MinimumSize = new System.Drawing.Size(809, 494);
+            this.Name = "RT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoshanTiming v0.3 alpha";
             this.Load += new System.EventHandler(this.RoshanTimer_Load);
@@ -322,8 +318,7 @@ namespace WindowsFormsApp1
             this.menuStrip2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.menuStrip3.ResumeLayout(false);
-            this.menuStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,8 +344,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.MenuStrip menuStrip3;
-        private System.Windows.Forms.ToolStripMenuItem MI3;
         private System.Windows.Forms.Label RClear;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

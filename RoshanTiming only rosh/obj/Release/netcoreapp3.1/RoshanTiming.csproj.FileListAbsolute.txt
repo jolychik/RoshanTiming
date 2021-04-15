@@ -30,4 +30,4 @@ C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\Ros
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\RoshanTiming.dll
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\RoshanTiming.pdb
 C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\RoshanTiming.genruntimeconfig.cache
-C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\WindowsFormsApp1.Clear.resources
+C:\Users\kravt\Desktop\ROSH\RoshanTiming only rosh\obj\Release\netcoreapp3.1\WindowsFormsApp1.RT.resources
