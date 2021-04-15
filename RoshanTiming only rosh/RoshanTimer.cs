@@ -45,6 +45,8 @@ namespace WindowsFormsApp1
             }
             else
             {
+                Calc.Visible = false;
+                Again.Visible = true;
                 if (Second.Text == "")
                 {
                     Second.Text = "00";
@@ -96,7 +98,6 @@ namespace WindowsFormsApp1
                 Clipboard.SetText(label5.Text);
                 label7.Visible = true;
                 panel2.Visible = true;
-                RClear.Visible = true;
             } 
         }
 
@@ -242,6 +243,23 @@ namespace WindowsFormsApp1
         {
             //Properties.Setting.Default.Язык = Lminute.Text;
             //Properties.Setting.Default.Save();
+        }
+
+        private void Again_Click(object sender, EventArgs e)
+        {
+            Minute.Text = "";
+            Second.Text = "";
+            panel1.Visible = false;
+            panel2.Visible = false;
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label7.Visible = false;
+            Again.Visible = false;
+            Calc.Visible = true;
+            Minute.Focus();
         }
     }
 }

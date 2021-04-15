@@ -44,14 +44,19 @@ namespace WindowsFormsApp1
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.RClear = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Again = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -208,6 +213,7 @@ namespace WindowsFormsApp1
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -216,6 +222,53 @@ namespace WindowsFormsApp1
             this.panel1.Size = new System.Drawing.Size(367, 170);
             this.panel1.TabIndex = 14;
             this.panel1.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Info;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(0, 209);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(367, 66);
+            this.panel3.TabIndex = 19;
+            this.panel3.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(306, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 16);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Заново";
+            this.label8.Visible = false;
+            this.label8.Click += new System.EventHandler(this.c_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(6, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 16);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Пример";
+            this.label9.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 39);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 15);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "label5";
+            this.label10.Visible = false;
             // 
             // menuStrip2
             // 
@@ -251,7 +304,6 @@ namespace WindowsFormsApp1
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.RClear);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(394, 291);
@@ -259,19 +311,6 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(367, 66);
             this.panel2.TabIndex = 19;
             this.panel2.Visible = false;
-            // 
-            // RClear
-            // 
-            this.RClear.AutoSize = true;
-            this.RClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RClear.Location = new System.Drawing.Point(306, 9);
-            this.RClear.Name = "RClear";
-            this.RClear.Size = new System.Drawing.Size(50, 16);
-            this.RClear.TabIndex = 21;
-            this.RClear.Text = "Заново";
-            this.RClear.Visible = false;
-            this.RClear.Click += new System.EventHandler(this.c_Click);
             // 
             // pictureBox1
             // 
@@ -285,11 +324,29 @@ namespace WindowsFormsApp1
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
+            // Again
+            // 
+            this.Again.BackColor = System.Drawing.Color.LightGray;
+            this.Again.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Again.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.Again.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.Again.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Again.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Again.Location = new System.Drawing.Point(72, 291);
+            this.Again.Name = "Again";
+            this.Again.Size = new System.Drawing.Size(274, 66);
+            this.Again.TabIndex = 21;
+            this.Again.Text = "Заново";
+            this.Again.UseVisualStyleBackColor = false;
+            this.Again.Visible = false;
+            this.Again.Click += new System.EventHandler(this.Again_Click);
+            // 
             // RT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 455);
+            this.Controls.Add(this.Again);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -314,6 +371,8 @@ namespace WindowsFormsApp1
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -344,7 +403,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label RClear;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button Again;
     }
 }
