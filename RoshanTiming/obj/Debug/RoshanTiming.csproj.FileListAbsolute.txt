@@ -1,0 +1,15 @@
+C:\Users\kravt\Desktop\123123\RoshanTiming\bin\Debug\RoshanTiming.exe.config
+C:\Users\kravt\Desktop\123123\RoshanTiming\bin\Debug\RoshanTiming.exe
+C:\Users\kravt\Desktop\123123\RoshanTiming\bin\Debug\RoshanTiming.pdb
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.csprojAssemblyReference.cache
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.Properties.Resources.resources
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.csproj.GenerateResource.cache
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.csproj.CoreCompileInputs.cache
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.exe
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.pdb
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\WindowsFormsApp1.ROSH.resources
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.AboutBox.resources
+C:\Users\kravt\Desktop\123123\RoshanTiming\bin\Debug\RoshanTiming.exe.manifest
+C:\Users\kravt\Desktop\123123\RoshanTiming\bin\Debug\RoshanTiming.application
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.exe.manifest
+C:\Users\kravt\Desktop\123123\RoshanTiming\obj\Debug\RoshanTiming.application
