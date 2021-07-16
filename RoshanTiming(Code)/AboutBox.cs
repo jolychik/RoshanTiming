@@ -104,7 +104,7 @@ namespace RoshanTiming
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Build05");
+            MessageBox.Show("Build06");
         }
 
         private void Again_Click(object sender, EventArgs e)

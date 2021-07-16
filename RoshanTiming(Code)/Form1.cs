@@ -365,9 +365,9 @@ namespace WindowsFormsApp1
             Again.Visible = false;
             Calc.Visible = true;
             label11.Visible = false;
-            Minute.Focus();
             Minute.Enabled = true;
             Second.Enabled = true;
+            Minute.Focus();
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -439,6 +439,8 @@ namespace WindowsFormsApp1
                 Again.Text = "Again";
                 label7.Text = "Example";
                 label11.Text = "Copy";
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = false;
 
             }
             RoshanTiming.Properties.Settings.Default.path = label13.Text;
@@ -461,10 +463,34 @@ namespace WindowsFormsApp1
                 Again.Text = "Заново";
                 label7.Text = "Пример";
                 label11.Text = "Скопировать";
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = true;
             }
             RoshanTiming.Properties.Settings.Default.path = label13.Text;
 
             RoshanTiming.Properties.Settings.Default.Save();
+        }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(pictureBox2, "English language");
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+                ToolTip t2 = new ToolTip();
+                t2.SetToolTip(pictureBox1, "Русский язык");    
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+
         }
     }
 
