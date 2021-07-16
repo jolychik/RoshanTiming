@@ -235,6 +235,8 @@ namespace WindowsFormsApp1
                 Again.Text = "Заново";
                 label7.Text = "Пример";
                 label11.Text = "Скопировать";
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = true;
             }
             else
             {
@@ -247,6 +249,8 @@ namespace WindowsFormsApp1
                 Again.Text = "Again";
                 label7.Text = "Example";
                 label11.Text = "Copy";
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = false;
             }
         }
 
