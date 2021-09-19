@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             this.Again = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -366,7 +367,7 @@ namespace WindowsFormsApp1
             this.Again.Location = new System.Drawing.Point(72, 281);
             this.Again.Name = "Again";
             this.Again.Size = new System.Drawing.Size(255, 66);
-            this.Again.TabIndex = 21;
+            this.Again.TabIndex = 3;
             this.Again.Text = "Заново";
             this.Again.UseVisualStyleBackColor = false;
             this.Again.Visible = false;
@@ -394,7 +395,8 @@ namespace WindowsFormsApp1
             this.checkBox1.Location = new System.Drawing.Point(627, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(125, 21);
-            this.checkBox1.TabIndex = 29;
+            this.checkBox1.TabIndex = 100;
+            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "Простой режим";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -470,5 +472,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
