@@ -57,6 +57,7 @@ namespace WindowsFormsApp1
             this.label13 = new System.Windows.Forms.Label();
             this.Again = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -306,7 +307,6 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(359, 67);
             this.panel2.TabIndex = 19;
             this.panel2.Visible = false;
-            this.panel2.MouseEnter += new System.EventHandler(this.panel2_MouseEnter);
             // 
             // pictureBox1
             // 
@@ -348,7 +348,7 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(768, 37);
+            this.label13.Location = new System.Drawing.Point(768, 33);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 25;
@@ -363,7 +363,7 @@ namespace WindowsFormsApp1
             this.Again.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.Again.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Again.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Again.Location = new System.Drawing.Point(73, 280);
+            this.Again.Location = new System.Drawing.Point(72, 281);
             this.Again.Name = "Again";
             this.Again.Size = new System.Drawing.Size(255, 66);
             this.Again.TabIndex = 21;
@@ -385,14 +385,25 @@ namespace WindowsFormsApp1
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
-            this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter_1);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.Location = new System.Drawing.Point(627, 3);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(125, 21);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "Простой режим";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // ROSH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 455);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -414,8 +425,6 @@ namespace WindowsFormsApp1
             this.Name = "ROSH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoshanTiming v0.4 alpha";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RT_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RT_FormClosed);
             this.Load += new System.EventHandler(this.RoshanTimer_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -456,9 +465,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Second;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button Again;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
