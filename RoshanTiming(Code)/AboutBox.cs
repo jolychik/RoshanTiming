@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace RoshanTiming
 {
@@ -14,7 +15,6 @@ namespace RoshanTiming
         public AboutBox()
         {
             InitializeComponent();
-            this.Text = String.Format("О программе {0}", AssemblyTitle);
         }
 
         #region Методы доступа к атрибутам сборки
@@ -97,19 +97,28 @@ namespace RoshanTiming
         }
         #endregion
 
-        private void Lminute_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Build07");
+            MessageBox.Show("Build08 (micro bug fix)");
         }
 
         private void Again_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void AboutBox_Load(object sender, EventArgs e)
+        {
+            ROSH rosh = new ROSH();
+            if (rosh.label13.Text == "1")
+            {
+                this.Text = String.Format("About the program {0}", AssemblyTitle);
+            }
+            else
+            {
+                this.Text = String.Format("О программе {0}", AssemblyTitle);
+            }
+        }
+
     }
 }

@@ -43,15 +43,13 @@ namespace WindowsFormsApp1
 
                 if (label13.Text == "1")
                 {
-                    this.label6.Location = new System.Drawing.Point(108, 244);
+                    this.label6.Location = new System.Drawing.Point(83, 244);
                     this.label11.Location = new System.Drawing.Point(262, 8);
                     if (Minute.Text == "")
                     {
                         label6.Visible = true;
                         label6.ForeColor = Color.Red;
-                        label6.Text = ("Вы не ввели минуту");
-
-
+                        label6.Text = ("You didn't enter a minute");
                     }
                     else
                     {
@@ -129,17 +127,15 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    this.label6.Location = new System.Drawing.Point(83, 244);
+                    this.label6.Location = new System.Drawing.Point(108, 244);
                     this.label11.Location = new System.Drawing.Point(310, 8);
                     if (Minute.Text == "")
                     {
                         label6.Visible = true;
                         label6.ForeColor = Color.Red;
-                        label6.Text = ("You didn't enter a minute");
-
-
+                        label6.Text = ("Вы не ввели минуту");
                     }
-                    else
+                else
                     {
                         Minute.Enabled = false;
                         Second.Enabled = false;
@@ -262,22 +258,6 @@ namespace WindowsFormsApp1
         {
             if (label13.Text == "1")
             {
-                checkBox1.Text = "Простой режим";
-                this.checkBox1.Location = new System.Drawing.Point(627, 3);
-                ItemMenu1.Text = "Закрыть программу";
-                оПрограммеToolStripMenuItem.Text = "О программе";
-                Lminute.Text = "Введите минуту";
-                Lsecond.Text = "Введите секунду";
-                label6.Text = "Вы не ввели минуту";
-                Calc.Text = "Посчитать и скопировать";
-                Again.Text = "Заново";
-                label7.Text = "Пример";
-                label11.Text = "Скопировать";
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = true;
-            }
-            else
-            {
                 checkBox1.Text = "Simple mode";
                 this.checkBox1.Location = new System.Drawing.Point(646, 2);
                 ItemMenu1.Text = "Exit the Programm";
@@ -291,6 +271,22 @@ namespace WindowsFormsApp1
                 label11.Text = "Copy";
                 pictureBox1.Visible = true;
                 pictureBox2.Visible = false;
+            }
+            else
+            {
+                checkBox1.Text = "Простой режим";
+                this.checkBox1.Location = new System.Drawing.Point(627, 3);
+                ItemMenu1.Text = "Закрыть программу";
+                оПрограммеToolStripMenuItem.Text = "О программе";
+                Lminute.Text = "Введите минуту";
+                Lsecond.Text = "Введите секунду";
+                label6.Text = "Вы не ввели минуту";
+                Calc.Text = "Посчитать и скопировать";
+                Again.Text = "Заново";
+                label7.Text = "Пример";
+                label11.Text = "Скопировать";
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = true;
             }
         }
 
@@ -432,8 +428,9 @@ namespace WindowsFormsApp1
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            AboutBox AB = new AboutBox();
             label13.Text = "1";
+            AB.Text = "About th program RoshanTiming";
 
             if (label13.Text == "1")
             {
@@ -441,8 +438,8 @@ namespace WindowsFormsApp1
                 this.checkBox1.Location = new System.Drawing.Point(646, 2);
                 this.label6.Location = new System.Drawing.Point(83, 244);
                 this.label11.Location = new System.Drawing.Point(310, 8);
-                ItemMenu1.Text = "Exit the Programm";
-                оПрограммеToolStripMenuItem.Text = "About the Programm";
+                ItemMenu1.Text = "Exit the Program";
+                оПрограммеToolStripMenuItem.Text = "About the Program";
                 Lminute.Text = "Enter a minute";
                 Lsecond.Text = "Enter a second";
                 label6.Text = "You didn't enter a minute";
@@ -460,8 +457,9 @@ namespace WindowsFormsApp1
         }
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-
-             label13.Text = "2";
+            AboutBox AB = new AboutBox();
+            label13.Text = "2";
+            AB.Text = String.Format("О программе {0}", AB.AssemblyTitle);
 
             if (label13.Text == "2")
             {

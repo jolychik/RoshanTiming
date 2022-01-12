@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
             // 
             this.ItemMenu1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.ItemMenu1.Name = "ItemMenu1";
-            this.ItemMenu1.Size = new System.Drawing.Size(141, 20);
+            this.ItemMenu1.Size = new System.Drawing.Size(140, 20);
             this.ItemMenu1.Text = "Закрыть программу";
             this.ItemMenu1.Click += new System.EventHandler(this.ItemMenu1_Click);
             // 
@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
             this.menuStrip1.Location = new System.Drawing.Point(-1, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(251, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(249, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "костыль1";
             // 
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             // 
             this.оПрограммеToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
@@ -209,7 +209,7 @@ namespace WindowsFormsApp1
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(262, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 16);
+            this.label8.Size = new System.Drawing.Size(50, 16);
             this.label8.TabIndex = 21;
             this.label8.Text = "Заново";
             this.label8.Visible = false;
@@ -221,7 +221,7 @@ namespace WindowsFormsApp1
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.label9.Location = new System.Drawing.Point(5, 8);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 16);
+            this.label9.Size = new System.Drawing.Size(55, 16);
             this.label9.TabIndex = 18;
             this.label9.Text = "Пример";
             this.label9.Visible = false;
@@ -278,7 +278,7 @@ namespace WindowsFormsApp1
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(5, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
+            this.label7.Size = new System.Drawing.Size(55, 16);
             this.label7.TabIndex = 18;
             this.label7.Text = "Пример";
             this.label7.Visible = false;
@@ -314,7 +314,7 @@ namespace WindowsFormsApp1
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(758, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(758, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +354,6 @@ namespace WindowsFormsApp1
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "1";
-            this.label13.Visible = false;
             // 
             // Again
             // 
@@ -379,7 +378,7 @@ namespace WindowsFormsApp1
             this.pictureBox2.AccessibleName = "";
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(758, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(758, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -28,57 +28,56 @@ namespace RoshanTiming
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lminute = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Again = new System.Windows.Forms.Button();
+            this.steam_l = new System.Windows.Forms.Label();
+            this.dev_l = new System.Windows.Forms.Label();
+            this.close_b = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Lminute
+            // steam_l
             // 
-            this.Lminute.AutoSize = true;
-            this.Lminute.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Lminute.Location = new System.Drawing.Point(36, 54);
-            this.Lminute.Name = "Lminute";
-            this.Lminute.Size = new System.Drawing.Size(182, 23);
-            this.Lminute.TabIndex = 6;
-            this.Lminute.Text = "Steam id - jolychik";
-            this.Lminute.Click += new System.EventHandler(this.Lminute_Click);
+            this.steam_l.AutoSize = true;
+            this.steam_l.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.steam_l.Location = new System.Drawing.Point(48, 56);
+            this.steam_l.Name = "steam_l";
+            this.steam_l.Size = new System.Drawing.Size(182, 23);
+            this.steam_l.TabIndex = 6;
+            this.steam_l.Text = "Steam id - jolychik";
             // 
-            // label1
+            // dev_l
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(36, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 23);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Developer - jolychik";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.dev_l.AutoSize = true;
+            this.dev_l.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dev_l.Location = new System.Drawing.Point(48, 21);
+            this.dev_l.Name = "dev_l";
+            this.dev_l.Size = new System.Drawing.Size(196, 23);
+            this.dev_l.TabIndex = 7;
+            this.dev_l.Text = "Developer - jolychik";
+            this.dev_l.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Again
+            // close_b
             // 
-            this.Again.BackColor = System.Drawing.Color.LightGray;
-            this.Again.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Again.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.Again.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.Again.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Again.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Again.Location = new System.Drawing.Point(35, 85);
-            this.Again.Name = "Again";
-            this.Again.Size = new System.Drawing.Size(197, 57);
-            this.Again.TabIndex = 22;
-            this.Again.Text = "Close";
-            this.Again.UseVisualStyleBackColor = false;
-            this.Again.Click += new System.EventHandler(this.Again_Click);
+            this.close_b.BackColor = System.Drawing.Color.LightGray;
+            this.close_b.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.close_b.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.close_b.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.close_b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_b.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.close_b.Location = new System.Drawing.Point(47, 87);
+            this.close_b.Name = "close_b";
+            this.close_b.Size = new System.Drawing.Size(197, 57);
+            this.close_b.TabIndex = 22;
+            this.close_b.Text = "Close";
+            this.close_b.UseVisualStyleBackColor = false;
+            this.close_b.Click += new System.EventHandler(this.Again_Click);
             // 
             // AboutBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 156);
-            this.Controls.Add(this.Again);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Lminute);
+            this.ClientSize = new System.Drawing.Size(284, 161);
+            this.Controls.Add(this.close_b);
+            this.Controls.Add(this.dev_l);
+            this.Controls.Add(this.steam_l);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -87,7 +86,8 @@ namespace RoshanTiming
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About a programm";
+            this.Text = "About the Program";
+            this.Load += new System.EventHandler(this.AboutBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,8 +95,8 @@ namespace RoshanTiming
 
         #endregion
 
-        private System.Windows.Forms.Label Lminute;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Again;
+        private System.Windows.Forms.Label steam_l;
+        private System.Windows.Forms.Label dev_l;
+        private System.Windows.Forms.Button close_b;
     }
 }
