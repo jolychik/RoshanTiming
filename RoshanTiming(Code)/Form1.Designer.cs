@@ -354,6 +354,7 @@ namespace WindowsFormsApp1
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "1";
+            this.label13.Visible = false;
             // 
             // Again
             // 
@@ -363,7 +364,7 @@ namespace WindowsFormsApp1
             this.Again.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.Again.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Again.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Again.Location = new System.Drawing.Point(72, 281);
+            this.Again.Location = new System.Drawing.Point(73, 280);
             this.Again.Name = "Again";
             this.Again.Size = new System.Drawing.Size(255, 66);
             this.Again.TabIndex = 3;

@@ -99,7 +99,7 @@ namespace RoshanTiming
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Build08 (micro bug fix)");
+            MessageBox.Show("Build09 (another micro bug fix)");
         }
 
         private void Again_Click(object sender, EventArgs e)

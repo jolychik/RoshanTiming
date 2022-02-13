@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
                 if (label13.Text == "1")
                 {
                     this.label6.Location = new System.Drawing.Point(83, 244);
-                    this.label11.Location = new System.Drawing.Point(262, 8);
+                    this.label11.Location = new System.Drawing.Point(310, 8);
                     if (Minute.Text == "")
                     {
                         label6.Visible = true;
@@ -52,6 +52,90 @@ namespace WindowsFormsApp1
                         label6.Text = ("You didn't enter a minute");
                     }
                     else
+                    {
+                        Minute.Enabled = false;
+                        Second.Enabled = false;
+                        Calc.Visible = false;
+                        Again.Visible = true;
+                        if (Second.Text == "")
+                        {
+                            Second.Text = "00";
+                        }
+                        int min = Convert.ToInt32(Minute.Text);
+                        int sec = Convert.ToInt32(Second.Text);
+                        int time1;
+                        int time2;
+                        int time3;
+
+                        time1 = min + 5;
+                        time2 = min + 8;
+                        time3 = min + 11;
+
+                        label1.Text = ("Time of Roshan's death - ") + Convert.ToString(min) + (":") + Convert.ToString(sec);
+
+                        label2.Text = ("End time of Aegis - ") + Convert.ToString(time1) + (":") + Convert.ToString(sec);
+
+                        label3.Text = ("Time of the respawn of Roshan (min) - ") + Convert.ToString(time2) + (":") + Convert.ToString(sec);
+
+                        label4.Text = ("Time of the respawn of Roshan (max) - ") + Convert.ToString(time3) + (":") + Convert.ToString(sec);
+
+
+                    if (checkBox1.Checked == true)
+                    {
+                        label5.Text =  Convert.ToString(time1) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time2) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time3) + ("-") + Convert.ToString(sec);
+                    }
+                    else
+                    {
+                        label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + Convert.ToString(sec) + (")");
+                    }
+                        panel1.Visible = true;
+                        label1.Visible = true;
+                        label2.Visible = true;
+                        label3.Visible = true;
+                        label4.Visible = true;
+                        //label5.Visible = true;
+                        //Copy.Visible = true;
+
+                        if ((Second.Text == "01") || (Second.Text == "02") || (Second.Text == "03") || (Second.Text == "04") || (Second.Text == "05") || (Second.Text == "06") || (Second.Text == "07") || (Second.Text == "08") || (Second.Text == "09") ||
+                            (Second.Text == "1") || (Second.Text == "2") || (Second.Text == "3") || (Second.Text == "4") || (Second.Text == "5") || (Second.Text == "6") || (Second.Text == "7") || (Second.Text == "8") || (Second.Text == "9") ||
+                            (Second.Text == "0") || (Second.Text == "00"))
+                        {
+                            label1.Text = ("Time of Roshan's death - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
+
+                            label2.Text = ("End time of Aegis - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
+
+                            label3.Text = ("Time of the respawn of Roshan (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
+
+                            label4.Text = ("Time of the respawn of Roshan (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
+
+                        if (checkBox1.Checked == true)
+                        {
+                            label5.Text = Convert.ToString(time1) + ("-") + ("0") + Convert.ToString(sec) + ("  ") + Convert.ToString(time2) + ("-") + ("0") + Convert.ToString(sec) + ("  ") + Convert.ToString(time3) + ("-") + ("0") + Convert.ToString(sec);
+                        }
+                        else
+                        {
+                            label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
+                        }
+                    }
+
+                        label5.Visible = true;
+                        Clipboard.SetText(label5.Text);
+                        label7.Visible = true;
+                        panel2.Visible = true;
+                        label11.Visible = true;                        Again.Focus();
+                }
+            }
+                else
+                {
+                    this.label6.Location = new System.Drawing.Point(108, 244);
+                    this.label11.Location = new System.Drawing.Point(262, 8);
+                    if (Minute.Text == "")
+                    {
+                        label6.Visible = true;
+                        label6.ForeColor = Color.Red;
+                        label6.Text = ("Вы не ввели минуту");
+                    }
+                else
                     {
                         Minute.Enabled = false;
                         Second.Enabled = false;
@@ -81,90 +165,6 @@ namespace WindowsFormsApp1
 
                     if (checkBox1.Checked == true)
                     {
-                        label5.Text =  Convert.ToString(time1) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time2) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time3) + ("-") + Convert.ToString(sec);
-                    }
-                    else
-                    {
-                        label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + Convert.ToString(sec) + (")");
-                    }
-                        panel1.Visible = true;
-                        label1.Visible = true;
-                        label2.Visible = true;
-                        label3.Visible = true;
-                        label4.Visible = true;
-                        //label5.Visible = true;
-                        //Copy.Visible = true;
-
-                        if ((Second.Text == "01") || (Second.Text == "02") || (Second.Text == "03") || (Second.Text == "04") || (Second.Text == "05") || (Second.Text == "06") || (Second.Text == "07") || (Second.Text == "08") || (Second.Text == "09") ||
-                            (Second.Text == "1") || (Second.Text == "2") || (Second.Text == "3") || (Second.Text == "4") || (Second.Text == "5") || (Second.Text == "6") || (Second.Text == "7") || (Second.Text == "8") || (Second.Text == "9") ||
-                            (Second.Text == "0") || (Second.Text == "00"))
-                        {
-                            label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
-
-                            label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
-
-                            label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
-
-                            label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
-
-                        if (checkBox1.Checked == true)
-                        {
-                            label5.Text = Convert.ToString(time1) + ("-") + ("0") + Convert.ToString(sec) + ("  ") + Convert.ToString(time2) + ("-") + ("0") + Convert.ToString(sec) + ("  ") + Convert.ToString(time3) + ("-") + ("0") + Convert.ToString(sec);
-                        }
-                        else
-                        {
-                            label5.Text = ("Died") + ("(") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec) + (")-Aegis(") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Min(") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec) + (")-Res.Max(") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec) + (")");
-                        }
-                        }
-
-                        label5.Visible = true;
-                        Clipboard.SetText(label5.Text);
-                        label7.Visible = true;
-                        panel2.Visible = true;
-                        label11.Visible = true;
-                        Again.Focus();
-                    }
-                }
-                else
-                {
-                    this.label6.Location = new System.Drawing.Point(108, 244);
-                    this.label11.Location = new System.Drawing.Point(310, 8);
-                    if (Minute.Text == "")
-                    {
-                        label6.Visible = true;
-                        label6.ForeColor = Color.Red;
-                        label6.Text = ("Вы не ввели минуту");
-                    }
-                else
-                    {
-                        Minute.Enabled = false;
-                        Second.Enabled = false;
-                        Calc.Visible = false;
-                        Again.Visible = true;
-                        if (Second.Text == "")
-                        {
-                            Second.Text = "00";
-                        }
-                        int min = Convert.ToInt32(Minute.Text);
-                        int sec = Convert.ToInt32(Second.Text);
-                        int time1;
-                        int time2;
-                        int time3;
-
-                        time1 = min + 5;
-                        time2 = min + 8;
-                        time3 = min + 11;
-
-                        label1.Text = ("Time of Roshan's death - ") + Convert.ToString(min) + (":") + Convert.ToString(sec);
-
-                        label2.Text = ("End time of Aegis - ") + Convert.ToString(time1) + (":") + Convert.ToString(sec);
-
-                        label3.Text = ("Time of the respawn of Roshan (min) - ") + Convert.ToString(time2) + (":") + Convert.ToString(sec);
-
-                        label4.Text = ("Time of the respawn of Roshan (max) - ") + Convert.ToString(time3) + (":") + Convert.ToString(sec);
-
-                    if (checkBox1.Checked == true)
-                    {
                         label5.Text = Convert.ToString(time1) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time2) + ("-") + Convert.ToString(sec) + ("  ") + Convert.ToString(time3) + ("-") + Convert.ToString(sec);
                     }
                     else
@@ -184,13 +184,13 @@ namespace WindowsFormsApp1
                             (Second.Text == "1") || (Second.Text == "2") || (Second.Text == "3") || (Second.Text == "4") || (Second.Text == "5") || (Second.Text == "6") || (Second.Text == "7") || (Second.Text == "8") || (Second.Text == "9") ||
                             (Second.Text == "0") || (Second.Text == "00"))
                         {
-                            label1.Text = ("Time of Roshan's death - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
+                            label1.Text = ("Время смерти рошана - ") + Convert.ToString(min) + (":") + ("0") + Convert.ToString(sec);
 
-                            label2.Text = ("End time of Aegis - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
+                            label2.Text = ("Время окончания аегиса - ") + Convert.ToString(time1) + (":") + ("0") + Convert.ToString(sec);
 
-                            label3.Text = ("Time of the respawn of Roshan (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
+                            label3.Text = ("Время респавна рошана (min) - ") + Convert.ToString(time2) + (":") + ("0") + Convert.ToString(sec);
 
-                            label4.Text = ("Time of the respawn of Roshan (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
+                            label4.Text = ("Время респавна рошана (max) - ") + Convert.ToString(time3) + (":") + ("0") + Convert.ToString(sec);
 
                         if (checkBox1.Checked == true)
                         {
