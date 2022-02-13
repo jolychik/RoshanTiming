@@ -1,5 +1,5 @@
 # RoshanTiming
-![Screenshot_1](https://user-images.githubusercontent.com/78825842/153751479-c36e2ab8-ee45-4b48-94db-98534101f72d.png)  
+![image](https://user-images.githubusercontent.com/78825842/153751535-3c91ed32-1fab-47ea-8feb-8792d923a89f.png)  
 v0.3 alpha - Сделанно более удобным, минус несколько багов  
 build04 - сделал более удобной и оптимизировал    
 v0.4 alpha - Added English language / Добавлен английский язык  (After installation, type in the search - RoshanTiming / После установки вбейте в поиск - RoshanTiming)  
